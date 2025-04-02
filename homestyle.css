@@ -1,0 +1,72 @@
+body{
+    background-color: black;
+    z-index:-2;
+}
+.container {
+    position: relative; /* This makes sure the child elements (image & text) are positioned relative to this */
+    width: fit-content;
+    display: inline-block;
+}
+
+.logo,.top_image{
+    top:-10px;
+}
+.logo{
+    z-index:4;
+    position:absolute;
+    height:75px;
+    top:20px;
+}   
+.top_image{
+    z-index:3;
+    position:relative;
+    height:80px;
+    width:1520px; 
+}
+
+.bottom_image{
+    display:block;
+    align-content: center;
+    top:0;
+    left:0;
+    z-index:-1;
+    position:absolute;
+    height:100vh;
+    width:100vw;   
+}
+.test{
+    font-family: "Roboto Mono", monospace;
+    color:whitesmoke;
+    position:relative;  
+    z-index: 4;
+    text-align:center;  
+    font-size: 4.5rem;
+    top:-60px;
+    font-stretch:ultra-expanded;}
+
+.home-info{
+        z-index:3;
+        top:750px;
+        position:absolute;
+        color:gray;
+        font-size:2rem;
+ }
+.flex-container{
+    display:flex;
+    flex-direction: row;
+    flex-basis:100px;
+    z-index:5;
+    position:relative;
+    left: 880px;
+    top:40px;
+
+}
+.home-button,.garage-button,.subsystem-button,.fsae-button,.media-button,.contact-button{
+    background-color:black;
+    color:red;
+    font-size:larger;
+    width:100px;
+    flex-basis: 100px;
+
+}
+

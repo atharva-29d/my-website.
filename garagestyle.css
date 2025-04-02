@@ -1,0 +1,29 @@
+body{
+    background-color:black;
+    z-index:-2
+}
+.container {
+    position: relative; /* This makes sure the child elements (image & text) are positioned relative to this */
+    width: fit-content;
+    display: inline-block;
+}
+.heading{
+    z-index:1;
+    position:relative;
+    font-size:4.5rem;
+    text-align:center;
+    top:-590px;
+    color:rgb(12, 8, 8);
+    box-shadow:10px white;
+    
+    
+}
+#bgimage{
+    z-index:-1;
+    position:static;
+    
+    height:100vh;
+    width:100vw;   
+    width:-100px;
+    align-content:center;
+}
